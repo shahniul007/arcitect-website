@@ -1,0 +1,218 @@
+/* work sans font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* shared syles */
+
+
+* {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans',  sans-serif;
+    font-family: 'Work Sans',  sans-serif;
+}
+.btn-primary{
+    border-radius: 5px;
+    background: #FD6E0A;
+    border: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.text-light-gray{
+    color: #727272;
+}
+.section-tittle{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+}
+/* header styles  */
+header{
+    background: rgb(255, 144, 14, 0.10);
+    padding: 50px 240px;
+    margin-bottom: 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-tittle{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+}
+nav>ul{
+    display: flex;
+    /* gap: 10px; */
+
+}
+nav li{
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+nav a{
+    text-decoration: none;
+    color: #424242;
+}
+/* baneeer styles */
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-tittle{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+.banner img{
+    margin-top: 10px;
+    width: 100%;
+}
+/* main section */
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+/*  teams styles*/
+.teams-container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.teams-tittle{
+    font-size: 2.5rem;
+
+}
+.teams-tittle .quick-list{
+    
+    font-weight: 500;
+}
+.teams-tittle .text-features{
+    color: #FF900E;
+}
+
+/* features section */
+.features{
+    margin-top: 130px;
+    display: flex;
+    gap: 100px;
+}
+
+.features-content .card{
+    padding: 30px;
+    margin-bottom: 20px;
+
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.features-content .section-tittle{
+    border-left: 5px solid #FD6E0A;
+    padding-left: 20px;
+}
+.ten-years-badge{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 342px;
+    padding: 40px ;
+
+}
+.ten-years-badge h2{
+    font-size: 4rem;
+
+}
+
+/* facts section  */
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.facts-card-container .card{
+    border-radius: 8ox;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding:  30px;
+    
+}
+.facts-card-container .card-tittle{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 5px;
+
+}
+.facts-card-container .card-stats{
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* sponsors */
+.sponsors {
+    text-align: center;
+}
+.sponsors-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+.sponsors-img-container img{
+    width: 165px;
+    height: 50px;
+}
+/* responsive  */
+
+/* mobile devics */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav, .teams-container,
+    .facts-card-container,
+    .sponsors-img-container{
+        flex-direction: column;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+    .teams-content, .facts-card-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .facts-card-container{
+        gap: 20px;
+    }
+}
+
+/* medium devices */
+@media screen and (min-width:576px) and (max-width:960px){
+    header{
+        padding: 50px;
+    }
+    nav, .teams-container,
+    .sponsors-img-container{
+        flex-direction: column;
+    }
+
+}

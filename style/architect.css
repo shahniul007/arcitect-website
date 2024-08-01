@@ -194,6 +194,19 @@ main{
     width: 165px;
     height: 50px;
 }
+/* footer */
+footer{
+    display: block;
+    padding: 25px;
+    text-align: center;
+    background:  rgb(255, 144, 14, 0.10);
+
+}
+.foot{
+    
+    
+    /* align-items: center; */
+}
 /* responsive  */
 
 /* mobile devics */
@@ -213,7 +226,7 @@ main{
     }
     .ten-years-badge{
         position: static;
-        max-width: 350px;
+        width: 75%;
     }
     .teams-img-container{
         grid-template-columns: 1fr;
